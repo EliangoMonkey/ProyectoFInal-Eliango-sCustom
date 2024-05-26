@@ -1,0 +1,7 @@
+Paleta Colores
+Principal - #2863C3 
+Secundario - #6893D9
+Indicacion - #E7F74B
+Subindicacion - #F4FF89
+HTML - #243D5C
+Body - #E2E9F2

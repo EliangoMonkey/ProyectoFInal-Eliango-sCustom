@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="fonts/AstroSpace-eZ2Bg.ttf">
+    <link rel="stylesheet" href="fonts/Outfit-VariableFont_wght.ttf">
+    <title>Noticias - Eliango's Custom</title>
+</head>
+<body>
+
+<!-- Barra de Navegación -->
+<nav class="navbar custom-navbar">
+    <a class="navbar-brand" href="index.html"><img src="img/EliangoCustomPNG-02.png" alt="Logo" class="logo-img">Eliango's Custom</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="noticias.html">Noticias</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galería</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="comentarios.html">Comentarios</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="content-container">
+        
+    <!-- Sección de Noticias -->
+
+        <div class="news-container">
+            <h2>Nuevas noticias</h2>
+            <div class="news-item">
+                <div class="news-image-container">
+                    <img src="img/news3.jpg" class="news-img" alt="Noticia 1">
+                </div>
+                <div class="news-content">
+                    <h5 class="news-title">Reparación drop-down de Spider-man #3</h5>
+                    <p class="news-text"><b>La tercer reparación del drop-down de una figura de Marvel Legends</b></p>
+                    <div class="extra-info" id="info1">
+                        <p class="news-text">Esta reparación fue la tercera de anteriores. Según los estándares
+                            de calidad ya vistos con Hasbro, muchas personas recibían sus figuras muy apretadas y quebradizas
+                            en esta ocasión me tuve que meter a realizar nuevas técnicas para poder reparar esta articulacion.
+                            Por si fuera poco, las dos tambien se iban a romper al mismo tiempo igual reforce,
+                            incluso hasta aumenté el rango de movimiento de las piernas, los hombros y ligeramente en la cabeza.</p>
+                        <img src="img/img3.1.jpg" class="extra-img" alt="Detalle 1">
+                        <img src="img/img3.2.jpg" class="extra-img" alt="Detalle 2">
+                        <a href="galeria.html"><p class="indicative">Si deseas ver más imágenes, consulta la sección <b>"Galeria"</b></p></a>
+                    </div>
+                    <button class="btn btn-primary" onclick="toggleExtraInfo('info1')">Leer más</button>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-image-container">
+                    <img src="img/news2.jpg" class="news-img" alt="Noticia 2">
+                </div>
+                <div class="news-content">
+                    <h5 class="news-title">Reparación drop-down de Spider-man #2</h5>
+                    <p class="news-text"><b>La segunda reparación del drop-down de una figura de Marvel Legends</b></p>
+                    <div class="extra-info" id="info2">
+                        <p class="news-text">Esta reparación fue la segunda entre dos. Según los estándares
+                            de calidad ya vistos con Hasbro, muchas personas recibían sus figuras muy apretadas y quebradizas
+                            en esta ocasión me tuve que meter a realizar nuevas técnicas para poder reparar esta articulacion.
+                            En esta el problema principal fue el tipo de plastico con la que estaba hecha, ¡Los polvos de mica
+                        no son buenos para dar estructura!</p>
+                        <img src="img/img2.1.jpg" class="extra-img" alt="Detalle 1">
+                        <img src="img/img2.2.jpg" class="extra-img" alt="Detalle 2">
+                        <a href="galeria.html"><p class="indicative">Si deseas ver más imágenes, consulta la sección <b>"Galeria"</b></p></a>
+                    </div>
+                    <button class="btn btn-primary" onclick="toggleExtraInfo('info2')">Leer más</button>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-image-container">
+                    <img src="img/news1.jpg" class="news-img" alt="Noticia 3">
+                </div>
+                <div class="news-content">
+                    <h5 class="news-title">Reparación drop-down de Spider-man #1</h5>
+                    <p class="news-text"><b>La primer reparación del drop-down de una figura de Marvel Legends</b></p>
+                    <div class="extra-info" id="info3">
+                        <p class="news-text">Esta reparación fue la primera de muchas que creía tener a futuro. Según los estándares
+                            de calidad ya vistos con Hasbro, muchas personas recibían sus figuras muy apretadas y quebradizas
+                            en esta ocasión me tuve que meter a realizar nuevas técnicas para poder reparar esta articulacion.
+                            Por si fuera poco, las dos se terminaron de romper al mismo tiempo, pero no me detuvo y seguí reforzando,
+                            incluso hasta aumenté el rango de movimiento de las piernas, los hombros y la cabeza.</p>
+                        <img src="img/img1.1.jpg" class="extra-img" alt="Detalle 1">
+                        <img src="img/img1.2.jpg" class="extra-img" alt="Detalle 2">
+                        <a href="galeria.html"><p class="indicative">Si deseas ver más imágenes, consulta la sección <b>"Galeria"</b></p></a>
+                    </div>
+                    <button class="btn btn-primary" onclick="toggleExtraInfo('info3')">Leer más</button>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-image-container">
+                    <img src="img/news0.jpg" class="news-img" alt="Noticia 4">
+                </div>
+                <div class="news-content">
+                    <h5 class="news-title">Cabeza repintada de Spider-man Unlimited</h5>
+                    <p class="news-text"><b>Repintado de la cabeza de Spider-man future foundation de Marvel Legends.</b></p>
+                    <div class="extra-info" id="info4">
+                        <p class="news-text">Algo complicado al repintar fueron los ojos. Por mas parecidos que fueran,
+                            se distinguia mucho la forma y tuve que ajustar el patrón de pintura.</p>
+                        <img src="img/img4.1.jpg" class="extra-img" alt="Detalle 1">
+                        <img src="img/img4.2.jpg" class="extra-img" alt="Detalle 2">
+                        <a href="galeria.html"><p class="indicative">Si deseas ver más imágenes, consulta la sección <b>"Galeria"</b></p></a>
+                    </div>
+                    <button class="btn btn-primary" onclick="toggleExtraInfo('info4')">Leer más</button>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-image-container">
+                    <img src="img/news-1.jpg" class="news-img" alt="Noticia 5">
+                </div>
+                <div class="news-content">
+                    <h5 class="news-title">Spider-man Unlimited MAFEX (bootleg)</h5>
+                    <p class="news-text"><b>Un custom único con un cuerpo inesperado...</b></p>
+                    <div class="extra-info" id="info5">
+                        <p class="news-text">Está figura fue hecha con un bootleg del spider-man 075. Todos los 
+                            detalles fueron reesculpidos, #telarañas y #capa #posable , una cabeza 
+                            inspirada en across the spider-verse y una cabeza de Peter Parker en el 
+                            estilo del show</p>
+                        <img src="img/img5.1.jpg" class="extra-img" alt="Detalle 1">
+                        <img src="img/img5.2.jpg" class="extra-img" alt="Detalle 2">
+                        <a href="galeria.html"><p class="indicative">Si deseas ver más imágenes, consulta la sección <b>"Galeria"</b></p></a>
+                    </div>
+                    <button class="btn btn-primary" onclick="toggleExtraInfo('info5')">Leer más</button>
+                </div>
+            </div>
+            <!-- Agregar más noticias aquí -->
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer-custom">
+    <div class="container">
+        <div class="row">
+            <!-- Redes Sociales -->
+            <div class="col">
+                <h5>Redes Sociales</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/EliangosCustom">
+                            <img src="img/social_facebook.png" alt="Facebook">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/eliangoscustom/">
+                            <img src="img/social_instagram.png" alt="Instagram">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.tiktok.com/@eliangoscustom?lang=es">
+                            <img src="img/social_tiktok.png" alt="TikTok">
+                            TikTok
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.youtube.com/channel/UCzZQ8cRhPtkvwMLnqDf04fg">
+                            <img src="img/social_youtube.png" alt="YouTube">
+                            YouTube
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://figurerealm.com/publicprofile/50866">
+                            <img src="img/social_figurerealm.png" alt="Figure Realm">
+                            Figure Realm
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comentarios.html">Comentarios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Leyenda -->
+        <div class="row">
+            <div class="col text-center">
+                <p>2024 Eliango's Custom</p>
+            </div>
+        </div>
+    </div>
+    <br>
+</footer>
+
+<script src="js/noticias.js"></script>
+<!--<link href="css/reset.css" rel="stylesheet">-->
+</body>
+</html>

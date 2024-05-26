@@ -1,0 +1,521 @@
+body {
+    background-color: #091029;
+    color: white;
+    margin: 0; 
+    padding: 0; 
+}
+
+/*fuentes*/
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.AstroSpace {
+    font-family: "a Astro Space", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*links*/
+a {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/*tipos de p*/
+p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.indicative{
+    color:#f4fda8;
+    background-color: #0b45a2;
+    border-radius: 2em;
+}
+
+/*listados*/
+li {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*titulos*/
+h2 {
+    font-family: "a Astro Space", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    background-color: #00135B;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: .5em;
+}
+
+h5 {
+    font-family: "a Astro Space", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    text-align: center;
+    margin: auto;
+}
+
+#indication{
+    margin: 0;
+    background-color: #E7F74B;
+    color: black;
+    width: 100%;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #0b45a2;
+    padding: 0 2vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-family: "a Astro Space", sans-serif;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.logo-img {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 10px 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5em;
+    padding: 1em;
+    margin: 0 0 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.nav-link.active {
+    border-radius: 5em;
+    padding: 1em;
+    background-color: rgba(117, 212, 235, 0.668);
+    box-shadow: 0 2px 4px rgba(16, 0, 96, 0.6);
+}
+
+/*galeria de imagenes*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 90%;
+    margin: auto;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #E2E9F2;
+}
+
+.image {
+    width: calc(25% - 10px); /* 4 columnas con margen */
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image.expanded {
+    width: 80%; /* Nuevo tamaño al 40% del contenedor */
+    cursor: zoom-out; /* Cambia el cursor al hacer zoom */
+}
+
+.image.expanded img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto;
+}
+
+/* Estilos del pie de página */
+.footer-custom {
+    background-color: #0b45a2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-custom .list-inline {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-custom .list-inline-item {
+    margin: 20px 80px 0 0;
+    text-align: center;
+}
+
+.footer-custom .list-inline-item img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.list-inline-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.footer-custom .list-inline-item a:hover {
+    color: aquamarine;
+}
+.footer-nav{
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+/* Consultas de medios para dispositivos responsivos */
+
+@media (max-width: 1200px) {
+    .news-item {
+        flex: 1 1 calc(50% - 20px);  
+    }
+    .navbar-brand {
+        font-family: "a Astro Space", sans-serif;
+        display: flex;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    a {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    p {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+    }
+    
+    li {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    h2 {
+        font-family: "a Astro Space", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3em;
+        background-color: #00135B;
+    }
+    
+    h5 {
+        font-family: "a Astro Space", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2em;
+    }
+    .overlay{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-family: "a Astro Space", sans-serif;
+        display: flex;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+    
+    a {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    p {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1em;
+    }
+    
+    li {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    h2 {
+        font-family: "a Astro Space", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3em;
+        color: #F4FF89;
+        background-color: #00135B;
+    }
+    
+    h5 {
+        font-family: "a Astro Space", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+    }
+    .nav-link{
+        margin: 0 20px 30px 0;
+        font-size: 1.5em;
+    }
+    .nav-link:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5em;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+        margin: 0 20px 30px 0;
+        padding: 5px 5px;
+    }
+    
+    .nav-link.active {
+        border-radius: 5em;
+        padding: 5px 5px;
+        background-color: rgba(117, 212, 235, 0.5);
+        box-shadow: 0 2px 2px rgba(16, 0, 96, 0.6);
+        margin: 0 10px 20px 0;
+    }
+    .navbar.custom-navbar{
+        flex-direction: column;
+    }
+    .news-item {
+        margin: 0;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0 0 5px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+
+    .image.expanded {
+        width: 100%; /* Nuevo tamaño al 40% del contenedor */
+        cursor: zoom-out; /* Cambia el cursor al hacer zoom */
+    }
+
+    .footer-custom .list-inline-item {
+        margin: 10px 10px 0 0;
+        text-align: center;
+    }
+    
+    .footer-custom .list-inline-item img {
+        width: 30px;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px; /* Centrar la imagen verticalmente */
+    }
+    
+    .list-inline-item a {
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    .footer-nav{
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        font-size: .85em;
+    }
+}
+
+@media (max-width: 576px) {
+    /*fuentes*/
+    .navbar-brand {
+        font-family: "a Astro Space", sans-serif;
+        display: flex;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        margin: auto;
+    }
+    
+    a {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    p {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1em;
+    }
+    
+    li {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    h2 {
+        font-family: "a Astro Space", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2em;
+        text-align: center;
+        background-color: #00135B;
+    }
+    
+    h5 {
+        font-family: "a Astro Space", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1em;
+    }
+
+    /*nav*/
+    .nav-link{
+        margin: 0 10px 20px 0;
+        font-size: 1.2em;
+    }
+    .nav-link:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        margin: 0 10px 0 0;
+        padding: 5px 5px;
+    }
+    
+    .nav-link.active {
+        border-radius: 5em;
+        padding: 5px 5px;
+        background-color: rgba(117, 212, 235, 0.5);
+        box-shadow: 0 2px 2px rgba(16, 0, 96, 0.6);
+        margin: 0 10px 20px 0;
+    }
+
+    .navbar.custom-navbar{
+        flex-direction: column;
+    }
+
+
+    /*carousel*/
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: auto;
+        bottom: 30%;
+    }
+
+    .carousel-control-prev {
+        left: 5%;
+    }
+
+    .carousel-control-next {
+        right: 5%;
+    }
+
+    .overlay {
+        bottom: 5px;
+        right: 5px;
+        padding: 5px;
+        width: 100%;
+    }
+    .news-item{
+        padding: 5px;
+        flex-direction: column;
+    }
+    .news-img{
+        margin: 5px;
+        width: 92%;
+        height: auto;
+    }
+    .news-title {
+        font-size: 1.5em;
+    }
+
+    .news-text {
+        font-size: 1.3em;
+    }
+
+    .extra-img{
+        max-width: 100%;
+        height: auto;
+    }
+
+}
