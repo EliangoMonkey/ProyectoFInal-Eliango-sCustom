@@ -519,3 +519,126 @@ h5 {
     }
 
 }
+@media (max-width: 470px) {
+    /*fuentes*/
+    .navbar-brand {
+        font-family: "a Astro Space", sans-serif;
+        display: flex;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-size: 1.3em;
+        margin: auto;
+    }
+    
+    a {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    p {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: .6em;
+    }
+    
+    li {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+    h1{
+        font-size: 1em;
+    }
+    h2 {
+        font-family: "a Astro Space", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2em;
+        text-align: center;
+        background-color: #00135B;
+    }
+    
+    h5 {
+        font-family: "a Astro Space", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: .7em;
+    }
+
+    /*nav*/
+    .nav-link{
+        margin: 0 5px 20px 0;
+        font-size: .6em;
+    }
+    .nav-link:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        margin: 0 10px 0 0;
+        padding: 5px 5px;
+    }
+    
+    .nav-link.active {
+        border-radius: 5em;
+        padding: 5px 5px;
+        background-color: rgba(117, 212, 235, 0.5);
+        box-shadow: 0 2px 2px rgba(16, 0, 96, 0.6);
+        margin: 0 10px 20px 0;
+    }
+
+    .navbar.custom-navbar{
+        flex-direction: column;
+    }
+
+
+    /*carousel*/
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: auto;
+        bottom: 30%;
+    }
+
+    .carousel-control-prev {
+        left: 5%;
+    }
+
+    .carousel-control-next {
+        right: 5%;
+    }
+
+    .overlay {
+        bottom: 5px;
+        right: 5px;
+        padding: 5px;
+        width: 100%;
+    }
+    .news-item{
+        padding: 5px;
+        flex-direction: column;
+    }
+    .news-img{
+        margin: 5px;
+        width: 92%;
+        height: auto;
+    }
+    .news-title {
+        font-size: 1.5em;
+    }
+
+    .news-text {
+        font-size: 1.3em;
+    }
+
+    .extra-img{
+        max-width: 100%;
+        height: auto;
+    }
+
+}
