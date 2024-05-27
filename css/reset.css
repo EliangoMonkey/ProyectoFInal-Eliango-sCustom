@@ -4,7 +4,19 @@
     margin: 0;
     padding: 0;
 }
+/*fuentes*/
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.AstroSpace {
+    font-family: "a Astro Space", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 /* Establecer el estilo de texto predeterminado */
 body {
     font-family: Arial, sans-serif;
@@ -14,6 +26,7 @@ body {
 a {
     text-decoration: none;
     color: inherit; /* Heredar el color del texto del padre */
+    font-family: "Outfit", sans-serif;
 }
 
 /* Eliminar viñetas de lista */
@@ -23,12 +36,14 @@ ul, ol {
 
 /* Eliminar márgenes y espaciado en elementos de lista */
 li {
+    font-family: "Outfit", sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /* Eliminar estilos de texto predeterminados */
 p {
+    font-family: "Outfit", sans-serif;
     margin: 0;
 }
 
@@ -36,6 +51,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: normal;
+    font-family: "a Astro Space", sans-serif;
 }
 
 /* Establecer márgenes en elementos de encabezado */
